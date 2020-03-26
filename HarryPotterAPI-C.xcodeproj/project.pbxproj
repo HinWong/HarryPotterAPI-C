@@ -13,6 +13,8 @@
 		4E59FF09242D52B600683DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E59FF08242D52B600683DEF /* Assets.xcassets */; };
 		4E59FF0C242D52B600683DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E59FF0A242D52B600683DEF /* LaunchScreen.storyboard */; };
 		4EF65A3B242D5626002AB038 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF65A3A242D5626002AB038 /* Character.m */; };
+		4EF65A3F242D5F07002AB038 /* CharacterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF65A3E242D5F07002AB038 /* CharacterTableViewController.m */; };
+		4EF65A42242D5F2A002AB038 /* CharacterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF65A41242D5F2A002AB038 /* CharacterDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		4EF65A38242D5626002AB038 /* HarryPotterAPI-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HarryPotterAPI-C-Bridging-Header.h"; sourceTree = "<group>"; };
 		4EF65A39242D5626002AB038 /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
 		4EF65A3A242D5626002AB038 /* Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		4EF65A3D242D5F06002AB038 /* CharacterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewController.h; sourceTree = "<group>"; };
+		4EF65A3E242D5F07002AB038 /* CharacterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewController.m; sourceTree = "<group>"; };
+		4EF65A40242D5F2A002AB038 /* CharacterDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterDetailViewController.h; sourceTree = "<group>"; };
+		4EF65A41242D5F2A002AB038 /* CharacterDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		4E59FEFE242D52B300683DEF /* HarryPotterAPI-C */ = {
 			isa = PBXGroup;
 			children = (
+				4EF65A43242D5F4C002AB038 /* Controller */,
 				4E59FF13242D52DB00683DEF /* Resources */,
 				4EF65A3C242D5631002AB038 /* Model */,
 				4EF65A38242D5626002AB038 /* HarryPotterAPI-C-Bridging-Header.h */,
@@ -85,6 +92,17 @@
 				4EF65A3A242D5626002AB038 /* Character.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4EF65A43242D5F4C002AB038 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4EF65A3D242D5F06002AB038 /* CharacterTableViewController.h */,
+				4EF65A3E242D5F07002AB038 /* CharacterTableViewController.m */,
+				4EF65A40242D5F2A002AB038 /* CharacterDetailViewController.h */,
+				4EF65A41242D5F2A002AB038 /* CharacterDetailViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF65A42242D5F2A002AB038 /* CharacterDetailViewController.m in Sources */,
 				4E59FF00242D52B300683DEF /* AppDelegate.swift in Sources */,
+				4EF65A3F242D5F07002AB038 /* CharacterTableViewController.m in Sources */,
 				4E59FF02242D52B300683DEF /* SceneDelegate.swift in Sources */,
 				4EF65A3B242D5626002AB038 /* Character.m in Sources */,
 			);
