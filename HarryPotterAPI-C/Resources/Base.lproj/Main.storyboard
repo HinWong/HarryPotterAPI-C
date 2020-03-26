@@ -10,7 +10,7 @@
         <!--Characters-->
         <scene sceneID="VCs-Dm-NdT">
             <objects>
-                <tableViewController id="Zrd-xw-Iou" customClass="CharacterTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Zrd-xw-Iou" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="flY-Qn-NaX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="586" y="277"/>
         </scene>
-        <!--Character Detail View Controller-->
+        <!--View Controller-->
         <scene sceneID="8dw-Rm-GMn">
             <objects>
-                <viewController id="n8q-Fs-dcv" customClass="CharacterDetailViewController" sceneMemberID="viewController">
+                <viewController id="n8q-Fs-dcv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oMD-u5-NYI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
