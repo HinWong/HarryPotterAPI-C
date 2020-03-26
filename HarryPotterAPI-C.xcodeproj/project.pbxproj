@@ -12,6 +12,7 @@
 		4E59FF07242D52B300683DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E59FF05242D52B300683DEF /* Main.storyboard */; };
 		4E59FF09242D52B600683DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E59FF08242D52B600683DEF /* Assets.xcassets */; };
 		4E59FF0C242D52B600683DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E59FF0A242D52B600683DEF /* LaunchScreen.storyboard */; };
+		4EF65A3B242D5626002AB038 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF65A3A242D5626002AB038 /* Character.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		4E59FF08242D52B600683DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E59FF0B242D52B600683DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E59FF0D242D52B600683DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EF65A38242D5626002AB038 /* HarryPotterAPI-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HarryPotterAPI-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		4EF65A39242D5626002AB038 /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		4EF65A3A242D5626002AB038 /* Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				4E59FF13242D52DB00683DEF /* Resources */,
+				4EF65A3C242D5631002AB038 /* Model */,
+				4EF65A38242D5626002AB038 /* HarryPotterAPI-C-Bridging-Header.h */,
 			);
 			path = "HarryPotterAPI-C";
 			sourceTree = "<group>";
@@ -70,6 +76,15 @@
 				4E59FF0D242D52B600683DEF /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4EF65A3C242D5631002AB038 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EF65A39242D5626002AB038 /* Character.h */,
+				4EF65A3A242D5626002AB038 /* Character.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +119,7 @@
 				TargetAttributes = {
 					4E59FEFB242D52B300683DEF = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -145,6 +161,7 @@
 			files = (
 				4E59FF00242D52B300683DEF /* AppDelegate.swift in Sources */,
 				4E59FF02242D52B300683DEF /* SceneDelegate.swift in Sources */,
+				4EF65A3B242D5626002AB038 /* Character.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZR7FKBFJP;
 				INFOPLIST_FILE = "$(SRCROOT)/HarryPotterAPI-C/Resources/Info.plist";
@@ -297,6 +315,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HinWong.HarryPotterAPI-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HarryPotterAPI-C/HarryPotterAPI-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZR7FKBFJP;
 				INFOPLIST_FILE = "$(SRCROOT)/HarryPotterAPI-C/Resources/Info.plist";
@@ -315,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HinWong.HarryPotterAPI-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HarryPotterAPI-C/HarryPotterAPI-C-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
